@@ -19,7 +19,7 @@ import {
   MentionInput,
   MentionSuggestionsProps,
 } from 'react-native-controlled-mentions';
-import ChatHeader from '../components/ChatHeader';
+import ChatHeader from '../../components/header/ChatHeader';
 
 let text_color = '#eeeedd';
 let bg_color = '#333333';
@@ -122,7 +122,7 @@ const ChatScreen = () => {
                     <Image
                       style={{width: 20, height: 20}}
                       tintColor={icon_color}
-                      source={require('../images/plus.png')}
+                      source={require('../../images/plus.png')}
                     />
                   </TouchableOpacity>
                   <TouchableOpacity style={{flex: 1}} onPress={handleTextClick}>
@@ -134,7 +134,7 @@ const ChatScreen = () => {
                     <Image
                       style={{width: 20, height: 20}}
                       tintColor={icon_color}
-                      source={require('../images/microphone.png')}
+                      source={require('../../images/microphone.png')}
                     />
                   </TouchableOpacity>
                 </View>
@@ -217,7 +217,7 @@ const ChatScreen = () => {
                 setValue('');
               }}>
               <Image
-                source={require('../images/send-message.png')}
+                source={require('../../images/send-message.png')}
                 tintColor={'#fff'}
                 style={{height: 25, width: 20, alignSelf: 'center'}}
               />

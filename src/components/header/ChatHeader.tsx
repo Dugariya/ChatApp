@@ -20,7 +20,7 @@ const ChatHeader: FC<IProps> = ({
       {backButton && (
         <TouchableOpacity>
           <Image
-            source={require('../images/back.png')}
+            source={require('../../images/back.png')}
             style={{width: 20, height: 20}}
           />
         </TouchableOpacity>
@@ -32,7 +32,7 @@ const ChatHeader: FC<IProps> = ({
       </View>
       <TouchableOpacity>
         <Image
-          source={require('../images/dots.png')}
+          source={require('../../images/dots.png')}
           style={styles.image_icon_style}
         />
       </TouchableOpacity>
